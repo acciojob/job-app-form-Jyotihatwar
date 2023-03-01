@@ -12,47 +12,55 @@
 	<form method="post">
 		<div>
 			<label for="name">Name*</label>
-			<input type="text" id="name"  required>
+			<input type="text" id="name" name="name" required>
 		</div>
 
 		<div>
 			<label for="email">Email*</label>
-			<input type="email" id="email" required>
+			<input type="email" id="email"  name="email" required>
 		</div>
 
 		<div>
-			<label >Gender*</label>
+			<label for="gender">Gender*</label>
 			<input type="radio" id="gender" value="male" name="gender"required>
-			<input type="radio" id="gender"  value="female" required>
-			<input type="radio" id="gender"  value="other" required>
+			<label for="male">Male</label>
+			<input type="radio" id="gender"  value="female" name="gender">
+			<label for="male">Female</label>
+			<input type="radio" id="gender"  value="other" name="gender">
+			<label for="male">Other</label>
 		</div>
 			
              <div>
 				 <label for="laptop">Laptop Brands</label>
-			     <select id="laptop" >
-				 <option >Apple</option>
-				 <option >Asus</option>
-				 <option >HP</option>
+			     <select id="laptop" name="laptop">
+				 <option value="apple">Apple</option>
+				 <option value="asus">Asus</option>
+				 <option value="hp">HP</option>
 			 </div>
 			
 	<div>
 		<label for="age">Age*</label>
-			<input type="number" id="age"  required>
+			<input type="number" id="age" name="age" required>
 	</div>
 			
 		<div>
 			<label for="dob">DOB*</label>
-			<input type="date" id="dob"  required>
+			<input type="date" id="dob" name="dob" required>
 		</div>
+
+		
 			
 		<div>
 			<label for="password">Password*</label>
-			<input type="password" id="password" required>
+			<input type="password" id="password" name="password" required>
 		</div>
-			
+
+			<div>
+				<label for="portfolio">Portfolio URL</label>
+				<input type="url" id="portfolio"  name="portfolio">
+			</div>
 			
 		<div>
-			<input type="url" id="portfolio">
 			<button type="submit">submit button</button>
 		</div>
 		
